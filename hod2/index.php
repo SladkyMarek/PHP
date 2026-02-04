@@ -95,7 +95,8 @@ span.psw {
 </form>
 
 <?php 
-    if(isset($_POST["uname"]) && $_POST["uname"] == "admin" && isset($_POST["psw"]) && $_POST["psw"] == "Heslo")
+    if(isset($_POST["uname"]) && $_POST["uname"]!== "admin" && isset($_POST["psw"]) && $_POST["psw"] !== "Heslo")
+    else if(isset($_POST["uname"]) && $_POST["uname"] == "admin" && isset($_POST["psw"]) && $_POST["psw"] == "Heslo")
     {
         session_start();
         $_SESSION["psw"] = $_POST["psw"];
