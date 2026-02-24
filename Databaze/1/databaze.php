@@ -1,4 +1,5 @@
 <?php 
+//databaze je v C:\xampp\mysql\data
 
 $dsn = "mysql:host=localhost;dbname=uzivatele";
 $username = "root2";
@@ -14,14 +15,12 @@ try{
 }
 
 $sql = "INSERT INTO plp (name, email)
-VALUES = ('jmeno', 'mail@mail.com')";
+VALUES ('LukasLuvFemboys', 'luki@semf.com')";
 
-if($db->query($sql) === TRUE){
-    echo "new record.";
+if($db->query($sql) == TRUE){
+    echo "<br>new record.";
 } else {
-    echo "ERROR" .$sql."<br>".$db->error;
+    echo "ERROR" .$sql."<br>";
 }
-
-$db->close();
 
 ?>

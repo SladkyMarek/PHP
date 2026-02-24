@@ -17,7 +17,7 @@
         echo "Jmeno: $user <br>Heslo: $pass";
     }
 
-    echo "<a href="logout.php"></a>";
+    echo '<a href="logout.php"></a>';
 
     /*
     if(isset($_SESSION["uname"]))
