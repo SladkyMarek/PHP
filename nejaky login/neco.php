@@ -1,9 +1,8 @@
 <?php 
-//databaze je v C:\xampp\mysql\data\(do te vlozit databazeagain)
 
 $dsn = "mysql:host=localhost;dbname=uzivatele";
-$username = "root2";
-$password = "password";
+$username = $_POST["uname"];
+$password = $_POST["psw"];
 
 try{
 
@@ -14,6 +13,8 @@ try{
     exit();
 }
 
+/*
+
 $sql = "INSERT INTO plp (name, email)
 VALUES ('LukasLuvFemboys', 'luki@semf.com')";
 
@@ -23,6 +24,6 @@ if($db->query($sql) == TRUE){
     echo "ERROR" .$sql."<br>";
 }
 
-
+*/
 
 ?>
