@@ -1,8 +1,8 @@
-C - create - fopen() //nazev
+C - create - fopen() //nazev, w/a
 R - Read - fread()
 U - update - fwrite()
 D - delete - unlink()
------------------------
+------------------------------------
 fclose()
 mkdir(nazev,prava,true)
 scamdir()
